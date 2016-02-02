@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>      
+
+<constant name="struts.devMode" value="false" />
+
+
+	<!-- CONTIENE LA PAGINA DE INICIO -->
+	<package name="PY_SGA_WEB" namespace="/"
+		extends="struts-default,json-default">
+		
+		
+		<interceptors>
+			<interceptor name="sessionInterceptor" class="sial.interceptor.SessionInterceptor"></interceptor>
+			<interceptor-stack name="sessionStack">
+				<interceptor-ref name="sessionInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<global-results>
+            <result name="NOLOGUEADO" type="redirect" >/a_revisasession</result>
+        </global-results>
+	
+				
+	</package>
+	
+
+	
+		
+</struts>
