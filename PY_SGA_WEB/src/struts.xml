@@ -13,7 +13,7 @@
 		
 		
 		<interceptors>
-			<interceptor name="sessionInterceptor" class="sial.interceptor.SessionInterceptor"></interceptor>
+			<interceptor name="sessionInterceptor" class="sga.interceptor.SessionInterceptor"></interceptor>
 			<interceptor-stack name="sessionStack">
 				<interceptor-ref name="sessionInterceptor"></interceptor-ref>
 				<interceptor-ref name="defaultStack" />

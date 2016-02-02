@@ -7,6 +7,6 @@
 <title></title>
 </head>
 <body>
-	<% response.sendRedirect("/PY_MATRICULA/a_redirecciona"); %>
+	<% response.sendRedirect("/PY_SGA_WEB/a_redirecciona"); %>
 </body>
 </html>
