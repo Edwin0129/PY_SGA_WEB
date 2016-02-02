@@ -5,8 +5,8 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 
 	<typeAliases>
-		<!--<typeAlias alias="usuarioAlias"  	type="sial.beans.Usuario" />
-		<typeAlias alias="apoderadoAlias"  	type="sial.beans.Apoderado" />
+		<typeAlias alias="usuarioAlias"  	type="sga.beans.Usuario" />
+		<!--<typeAlias alias="apoderadoAlias"  	type="sial.beans.Apoderado" />
 		<typeAlias alias="alumnoAlias"  	type="sial.beans.Alumno" />
 		<typeAlias alias="matriculaAlias"  	type="sial.beans.Matricula" />-->
 
@@ -34,7 +34,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<mappers>					
 
-		<!--<mapper resource="sial/xml/sialXML.xml" />-->
+		<mapper resource="sga/xml/usuarioXML.xml" />
 
 	</mappers>
 	

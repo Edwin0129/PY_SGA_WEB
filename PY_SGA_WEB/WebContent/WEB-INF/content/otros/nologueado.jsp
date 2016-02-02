@@ -1,0 +1,1 @@
+Su sesion ha expirado, por favor haga click <a href="a_redirecciona">AQUI</a> para regresar al login.
