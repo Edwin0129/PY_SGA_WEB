@@ -19,13 +19,12 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 				
 			<dataSource type="UNPOOLED">
 						<property name="driver" value="com.mysql.jdbc.Driver" />
-						<property name="url" value="jdbc:mysql://www.allconsulting.com.pe:3306/cmngaxjw_DB_PROD_SGA" />
-						
+						<property name="url" value="jdbc:mysql://199.168.191.87:3306/cmngaxjw_DB_PROD_SGA" />
 						<!--  <property name="driver" value="net.sourceforge.jtds.jdbc.Driver" />
 						<property name="url" value="jdbc:jtds:sqlserver://localhost:1433/cmngaxjw_DB_PROD_SGA" />-->
 						
-						<property name="username" value="cmngaxjw_admin" />
-						<property name="password" value="allconsultin_1" />
+						<property name="username" value="cmngaxjw" />
+						<property name="password" value="josejavg2016" />
 			 </dataSource>
 	</environment>
 	</environments>
