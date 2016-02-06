@@ -7,7 +7,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 
 	<select id="USP_SEG_USUARIO_LOGIN" resultType="usuarioAlias"  statementType="CALLABLE">
-		call USP_SEG_USUARIO_LOGIN (#{cod_usuario , mode=IN, jdbcType=VARCHAR},#{contrasena, mode=IN, jdbcType=VARCHAR})
+		Call USP_SEG_USUARIO_LOGIN (#{cod_usuario , mode=INOUT, jdbcType=VARCHAR},#{contrasena, mode=INOUT, jdbcType=VARCHAR})
 	</select>
 	
 
