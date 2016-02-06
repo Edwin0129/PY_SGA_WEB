@@ -10,6 +10,23 @@ public class Usuario implements Serializable {
 	private String ind_admin;
 	private String ind_bloqueo;
 	private String constrana;
+	private String constrasena;
+	private String status_registro;
+	
+	
+	
+	public String getStatus_registro() {
+		return status_registro;
+	}
+	public void setStatus_registro(String status_registro) {
+		this.status_registro = status_registro;
+	}
+	public String getConstrasena() {
+		return constrasena;
+	}
+	public void setConstrasena(String constrasena) {
+		this.constrasena = constrasena;
+	}
 	public String getCod_usuario() {
 		return cod_usuario;
 	}

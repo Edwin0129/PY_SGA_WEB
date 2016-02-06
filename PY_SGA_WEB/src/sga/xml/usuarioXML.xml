@@ -6,6 +6,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="usuarioXML">
 
 
-
+	<select id="USP_SEG_USUARIO_LOGIN" resultType="usuarioAlias"  statementType="CALLABLE">
+		call USP_SEG_USUARIO_LOGIN (#{cod_usuario , mode=IN, jdbcType=VARCHAR},#{contrasena, mode=IN, jdbcType=VARCHAR})
+	</select>
+	
 
 </mapper>

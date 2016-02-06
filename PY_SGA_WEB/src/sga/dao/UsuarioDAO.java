@@ -25,8 +25,16 @@ public class UsuarioDAO implements UsuarioService {
 	
 	@Override
 	public Usuario USPSEGUSUARIO(Usuario objUsuario) {
-		// TODO Auto-generated method stub
-		return null;
+		SqlSession s = sqlmapper.openSession();
+		Usuario Usuario = null;
+		try {
+			Usuario = (Usuario) s.selectOne("usuarioXML.USP_SEG_USUARIO_LOGIN", objUsuario);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			s.close();
+		}
+		return Usuario;
 	}
 
 }
